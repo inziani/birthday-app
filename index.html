@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>birthday</title>
-  <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-  <!--<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">-->
+  <!--<link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">-->
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <style>
   body {
@@ -14,6 +14,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;  
 background-size: cover;
 }
+
 .center {
   position: absolute;
   top: 30%;
@@ -41,9 +42,11 @@ background-size: cover;
     }
 fieldset {
   padding: 1em;
-  font:80%/1 sans-serif;
+  font:100%/1 sans-serif;
   border:5px solid tan
+
   }
+
 label {
   float:left;
   width:25%;
@@ -56,32 +59,74 @@ label {
   }
 legend{
   color: tan;
+  padding: 0.2em 0.5em;
+  text-align:left;
+  font-size: 15pt;
   }
-button  {
+.button  {
   background-color:white;	
-  color: tan
+  color: black
+  border: none;
+  padding: 15px 32px;
   text-align: center;
-  width: 15%;
-  margin-right: 0.5em;
-  padding-top: 0.2em;
-  font-size: 3.5em;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
 }
+
+form {
+border:5px solid tan
+border-radius: 5px;
+width: 100%;
+
+}
+
   
 </style>
 <body>
+  <!--
   <header class="center">
     <h1> Happy birth day Rafiki! Welcome to the African Rain forest<br>
       Tell me your birthdate and gender.I wil tell you your true Akan name!
     </h1>
-  </header>
-  <section >
-    <form action="/login" method="post">
+  </header> 
+  <section class="row">
+      <div class="grid">
+        <section class="col-2-3">
+          <p>Happy birth day Rafiki! Welcome to the African Rain forest<br>
+            Tell me your birthdate and gender.I wil tell you your true Akan name!</p>
+        </section>
+        <form class="col-1-3" action="#" method="post">
 
+          <fieldset>
+            <legend>Your Info</legend>
+            <label> Gender
+              <select name="Gender" id="GENDER">
+                <option value="Female"><legend>F</legend></option>
+                <option value="Male">M</option>
+              </select>
+            </label> 
+            <label>
+              Date of Birth 
+              <input type="date"name="birthday"></inputtype>
+            </label>
+            <br>
+            <button type="button" class="button"><strong>Submit</strong></button>
+          </fieldset>
+
+        </form>
+        action="#" method="post">
+    </div> 
+  </section>
+=================================================================-->
+  
+    <form action="/login" method="post">
   <fieldset>
-    <legend>Your Info</legend>
+
+    <legend><h1>Your Info</h1> </legend>
     <label> Gender
-      <select name="Gender" id="GENDER">
-        <option value="Female"><legend>F</legend></option>
+      <select name="Gender" id="Gender">
+        <option value="Female">F</option> 
         <option value="Male">M</option>
       </select>
     </label> 
@@ -90,13 +135,11 @@ button  {
       <input type="date"name="birthday"></inputtype>
     </label>
     <br>
-    <br>
-    <br>
-    <br>
-    <button type="button" class="button"><strong>Submit</strong></button>
   </fieldset>
+  <button type="button" class="button" onclick="alert('Hello world!')"><h1>Submit</h1></button>
 </form>
 </section>
+
     <script src="/js/script.js"></script>
 </body>
 </html>
