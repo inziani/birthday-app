@@ -13,6 +13,7 @@
   background-attachment: fixed;  
   background-size: cover;
 }
+
 select {
   width: 5cm;
   height: 3cm;
@@ -22,13 +23,24 @@ select {
   font-size: 20px;
   background-color: whitesmoke;
 }
+.centered_welcome {
+    position: absolute;
+    top: 30%;
+    color: tan;
+    text-align: center;
+    outline-style: groove;
+    outline-width: thick;
+    outline-color: tan;
+    word-spacing: 10pt;
+      }
+  
 </style>
 <body>
   <div class="centered_welcome">
-    <p> Happy birth day Rafiki! <br> welcome to the African Rain forest.<br> 
-      tell me your birthdate and gender,<br> I wil tell you your true Akan name!</p>
+    <h1> Happy birth day Rafiki! <br> Welcome to the African Rain forest.<br>
+      Tell me your birthdate and gender and I wil tell you your true Akan name!
+    </h1>
   </div>
-
   <div>
     <form>
       <select id="Gender" name="gender">
@@ -37,13 +49,16 @@ select {
       </select>
     </form>
   </div>
+  <div>
+    <label for="Gender">Gender</label>
+    <input type="text" data-role="calenderpicker"  
+    data-input-format="%d/%m/%y" value="21/12/1972">>
+  </div>
     
  
-   
+  
 
-<div>
 
-</div>
   <script src="/js/script.js"></script>
 </body>
 </html>
