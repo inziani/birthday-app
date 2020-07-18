@@ -1,42 +1,71 @@
-welcome {
-  border-style: groove;
-  border-width: 6px;
-  height: 100px;
-  margin: 20px;
-  padding: 20px;
-  width: 400px;
-}
-
-.container {
-  top: 50%;
-  bottom: 50%;
-  position: absolute;
-  padding-left: 60px; 
-  padding-right: 60px; 
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 1200px;
+body {
+  background-image: url('images/rain-forest.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
   }
-fieldset {
-  padding: 1em;
-  font:80%/1 sans-serif;
-  border:5px solid tan
-  }
-label {
-  float:left;
-  width:25%;
-  margin-right:0.5em;
-  padding-top:0.2em;
-  text-align:right;
-  font-weight:bold;
-  }
+  
+  .center {
+    color: white;
+    text-align: center;
+    word-spacing: 2pt;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      }
+    
+      .right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    outline-style: groove;
+    outline-width: thick;
+    outline-color: tan;
+    word-spacing: 2pt;
+      }
+  fieldset {
+    padding: 1em;
+    font:100%/1 sans-serif;
+  
+    }
+  
+  label {
+    float:left;
+    width:25%;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    font-weight:bold;
+    font-size: 30pt;
+    color: tan;
+    }
   legend{
     color: tan;
+    padding: 0.2em 0.5em;
+    text-align:left;
+    font-size: 15pt;
+    }
+  .button  {
+    background-color:white;	
+    color: black
+    
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
   }
   
-
-
-
-  
-
-
+  form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border:5px solid tan
+  border-radius: 5px;
+  width: 100%;
+  }
