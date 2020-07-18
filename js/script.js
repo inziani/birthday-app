@@ -48,6 +48,22 @@ alert('try again later')
 
 fetchDay()
 
-
-
-
+function getInputValue(){
+  // Selecting the input element and get its value 
+  var inputVal = document.getElementById("myInput").value;
+  //var inputValues = document.getElementById("fieldset").querySelectorAll('birthDay', 'gender'); 
+  // Displaying the value
+  alert(inputVal);
+ // alert(inputValues);
+}
+var inputValues = []
+function getFieldSet(){
+  // Selecting the input element and get its value 
+  //var inputValues = []
+  var inputVal = document.getElementById("birthDay").value;
+ //var inputValues = document.getElementById("fieldset").querySelectorAll('birthDay', 'gender'); 
+  // Displaying the value
+  //alert(inputVal);
+  inputValues.push(inputVal + 'test')
+alert(inputValues)
+}

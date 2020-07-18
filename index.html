@@ -58,22 +58,28 @@ background-size: cover;
   <fieldset>
     <legend><h1></h1> </legend>
     <label> Gender
-      <select name="Gender" id="Gender">
+      <select name="Gender" id="gender">
         <option value="Female">F</option> 
         <option value="Male">M</option>
       </select>
     </label> 
     <label>
       Date of Birth 
-      <input type="date"name="birthday"></inputtype>
+      <input type="text"name="birthday" id="birthDay">
     </label>
     <br>
   </fieldset>
-  <button type="button" class="button" onclick="alert('Hello world!')"><h1>Submit</h1></button>
+  <button type="button" class="button" onclick="getFieldSet()"><h1>Submit</h1></button>
 </form>
 </section>
 </div>
 
+<body>
+
+</body>
     <script src="/js/script.js"></script>
+    <script>
+      getInputValue();
+  </script>
 </body>
 </html>
