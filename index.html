@@ -4,61 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>birthday</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <!--<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">-->
 </head>
 <style>
   body {
-  background-image: url('images/rain-forest.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+background-image: url('images/rain-forest.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
 }
-
-select {
-  width: 5cm;
-  height: 3cm;
-  padding: 30px 30px;
-  border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  background-color: whitesmoke;
+.center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  outline-style: groove;
+  outline-width: thick;
+  outline-color: tan;
+  word-spacing: 2pt;
+    }
+  
+    .right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  outline-style: groove;
+  outline-width: thick;
+  outline-color: tan;
+  word-spacing: 2pt;
+    }
+fieldset {
+  padding: 1em;
+  font:80%/1 sans-serif;
+  border:5px solid tan
+  }
+label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  font-size: 30pt;
+  color: tan;
+  }
+legend{
+  color: tan;
+  }
+button  {
+  background-color:white;	
+  color: tan
+  text-align: center;
+  width: 15%;
+  margin-right: 0.5em;
+  padding-top: 0.2em;
+  font-size: 3.5em;
 }
-.centered_welcome {
-    position: absolute;
-    top: 30%;
-    color: tan;
-    text-align: center;
-    outline-style: groove;
-    outline-width: thick;
-    outline-color: tan;
-    word-spacing: 10pt;
-      }
   
 </style>
 <body>
-  <div class="centered_welcome">
-    <h1> Happy birth day Rafiki! <br> Welcome to the African Rain forest.<br>
-      Tell me your birthdate and gender and I wil tell you your true Akan name!
+  <header class="center">
+    <h1> Happy birth day Rafiki! Welcome to the African Rain forest<br>
+      Tell me your birthdate and gender.I wil tell you your true Akan name!
     </h1>
-  </div>
-  <div>
-    <form>
-      <select id="Gender" name="gender">
-      <option value="Female">F</option>
-      <option value="Male">M</option>
+  </header>
+  <section >
+    <form action="/login" method="post">
+
+  <fieldset>
+    <legend>Your Info</legend>
+    <label> Gender
+      <select name="Gender" id="GENDER">
+        <option value="Female"><legend>F</legend></option>
+        <option value="Male">M</option>
       </select>
-    </form>
-  </div>
-  <div>
-    <label for="Gender">Gender</label>
-    <input type="text" data-role="calenderpicker"  
-    data-input-format="%d/%m/%y" value="21/12/1972">>
-  </div>
-    
- 
-  
-
-
-  <script src="/js/script.js"></script>
+    </label> 
+    <label>
+      Date of Birth 
+      <input type="date"name="birthday"></inputtype>
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="button"><strong>Submit</strong></button>
+  </fieldset>
+</form>
+</section>
+    <script src="/js/script.js"></script>
 </body>
 </html>

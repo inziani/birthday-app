@@ -1,93 +1,42 @@
-h1 {
-  color: whitesmoke;
-  text-align: center;
-  font-size: 40px;
-  font-size-adjust: inherit;
-  font-style: italic;
-  padding-top: 20px;}
+welcome {
+  border-style: groove;
+  border-width: 6px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+}
 
-.centered_welcome {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    outline-style: groove;
-    outline-width: thin;
-    outline-color: tan;
-    word-spacing: 2pt;
-      }
+.container {
+  top: 50%;
+  bottom: 50%;
+  position: absolute;
+  padding-left: 60px; 
+  padding-right: 60px; 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 1200px;
+  }
+fieldset {
+  padding: 1em;
+  font:80%/1 sans-serif;
+  border:5px solid tan
+  }
+label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
+  legend{
+    color: tan;
+  }
   
-h2 {
-  color: black;
-  text-align: right;
-  font-size: 15px;
-  font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p { 
-  color:whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 890px;
-  text-align: center;
-}
-
-ul {
-  line-height: 10px;
-}
-
-ol {
-
-  list-style-type: square;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}
-.aboutme {
-  background-color: lawngreen;
-}
-.projects {
-  background-color: lightcoral;
-}
-.catclimate {
-  background-color: yellow;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.important {
-  background-color: lawngreen;
-}
-.unimportant  {
-  background-color: lightcoral;
-}
-
-img {
-  float: left;
-}
-
-.sidebar{
-float: left;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 15px;
-
-}
-
-.column {
-  width: 500px;
-  float: right;
-}
-
-select {
-  width: 100%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: whitesmoke;
-}
 
 
 
+  
 
 
