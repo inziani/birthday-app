@@ -14,20 +14,17 @@ var birthday = document.getElementById("birthDay").value
 //==========================================================================================
 
 function validateBirthday(){
-  //var inputValBirthday = document.getElementById("birthDay").value
-  if (birthday === ''){
-    alert('Please key in your date of birth');
+  if (birthday === " "|| !reg_exp.test(birthday)){
+    alert('Please key in your birthday in the format "YY/YY/YYYY"');
     document.getElementById("birthDay").value.focus();
     return false;
   }
-  else if(!((reg_exp.test(birthday)))){
+  else if(!reg_exp.test(birthday)){
     alert('Please key in your birthday in the format "MM/DD/YYYY"');
     return false;
   } 
 
-{
-
-   }
+  return true
   }
 
   //===========================================================================================
