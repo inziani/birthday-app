@@ -1,9 +1,10 @@
 
 maleNames= ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
 femaleNames= ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
-userGender = ['M', 'F'];
 maleNames= ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
 femaleNames= ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+
+var reg_exp = RegExp("!/^\d{1,2}\/\d{1,2}\/\d{4}$/")
 
 //==========================================================================================
 //This function validates that the birthday field is not empty
@@ -16,13 +17,26 @@ function validateBirthday(){
     document.getElementById("birthDay").value.focus();
     return false;
   }
-  else{alert('give me a minute')}
+  else if(reg_exp.test(document.getElementById("birthDay").value)){
+    alert('Please key in your date in the format "MM/DD/YYYY"')
+    return false;
+
+  }
+  
+{
+
+   }
   }
 
   //===========================================================================================
-  // This function validates that  the date entered is valid (DDMMYY)
+  // This function validates that  the date entered is a valid date in the format (DDMMYY)
   //===========================================================================================
 
+function validDate(){
+
+
+
+  }
   
   
 
