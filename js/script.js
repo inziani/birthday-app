@@ -58,7 +58,7 @@ alert('try again later')
 }
 }
 
-var inputValues = []
+//var inputValues = []
 function getFieldSet(){
   // Selecting the input element and get its value 
   var inputVal = document.getElementById("birthDay").value;
@@ -85,7 +85,7 @@ function getFieldSet(){
     //adjust for leap years
     if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)){
       monthLength[1]=29;
-      return alert(monthLength) ;
+      //return alert(monthLength) ;
     }
     if (mydate.getDay()=== 1){
        alert('Your Akan name  is ' + ''+ maleNames[0])
