@@ -23,30 +23,27 @@ background-size: cover;
       Welcome to the African Rain forest<br>
       Tell me your birthdate and gender.<br>
       I wil tell you your true Akan name!</h1>
-  </header> -->
-
+  </header>
   <div class="container">
     <div class="jumbotron">
       <div class="centre">
         <h1>Ghanaian Akan Names</h1> 
         <br>  
-        <br>
         <br>   
-          <h2> Akan names in Ghana are based on
-           
+          <h2> Akan names in Ghana are based on<br>
             <ul>
               <li>gender</li>
               <li>day of the week one was born</li>
+            </ul>
           <br>
           <p>Select your gender and key in your date of birth, submit the information 
             for your Akan name</p> 
           </h2> 
-      </div>
-      <br>
-      <br>
-      <br>
-</form>
-      <table cellspacing = "10" cellpadding = "10" border = "10">
+        </div>
+        <br>
+        <table </table>
+    <form action="#" method="post">
+      <table align="center" cellspacing = "10" cellpadding = "10" border = "10">
         <tr>
           <td align = "right"><h2>Birthday</h2></td>
           <td><input type = "text" style="font-size:16pt" name = "Birthday" /></td>
@@ -55,29 +52,24 @@ background-size: cover;
           <td align = "right"><h2>Gender</h2></td>
           <td> 
             <select name = 'Gender' style="font-size: 16pt;">
+              <option value = "-1" selected>[choose yours]</option>
               <option value="Female"><h2>F</h2></option>
               <option value="Male"><h2>M</h2></option> 
           </td>
           </tr>
           <tr>
-            <td><button type="button" class="button" onclick="validateBirthday()">
+            <td><button type="button" class="button" onclick="getFieldSet()">
               <h2>Submit</h2></button></td>
           </tr>
       </table>
-    </div>
-
-  </form>
+    </form>
+  </div>
 </div>
-
-    <script src="/js/script.js"></script>
-    <script>
-      getInputValue();
-  </script>
+<script src="/js/script.js"></script>
 </body>
 </html>
-
-      <!-- INTRO SECTION -->
-  <!--
+ -->
+ 
   <section class="row">
       <div class="grid">
         <section class="col-2-3">
@@ -85,7 +77,6 @@ background-size: cover;
             Tell me your birthdate and gender.I wil tell you your true Akan name!</p>
         </section>
         <form class="col-1-3" action="#" method="post">
-
           <fieldset>
             <legend>Your Info</legend>
             <label> Gender
@@ -96,17 +87,20 @@ background-size: cover;
             </label> 
             <label>
               Date of Birth 
-              <input type="date"name="birthday"></inputtype>
+              <input type="date"name="birthday" id="birthDay">
             </label>
             <br>
-            <button type="button" class="button"><strong>Submit</strong></button>
+            <button type="button" class="button" onclick="getFieldSet()"><strong>Submit</strong>
+            </button>
           </fieldset>
-
         </form>
-        action="#" method="post">
     </div> 
   </section>
-=================================================================
+  <script src="/js/script.js"></script>
+</body>
+</html>
+
+<!---=================================================================
   
     <form form id="myForm" action="/login" method="post">
   <fieldset>
