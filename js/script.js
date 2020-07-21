@@ -3,6 +3,7 @@ maleNames= ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
 femaleNames= ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
 maleNames= ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
 femaleNames= ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+var monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
 
 var reg_exp = RegExp('/^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$/')
 var birthday = document.getElementById("birthDay").value
@@ -71,7 +72,42 @@ function getFieldSet(){
 //}
   else{
     var dateString = inputVal.split('/')
-    inputValues.push(inputVal  + 'The regex works') //update selected value on a list
-    alert(inputValues), alert(dateString)
-  }
+    var day = parseInt(dateString[0])
+    var month = parseInt(dateString[1])-1
+    var year = parseInt(dateString[2])
+    var mydate = new Date(year, month, day)
+    //inputValues.push(inputVal  + 'The regex works') //update selected value on a list
+    //alert(inputValues), alert(dateString), alert(day), alert(month), alert(year)
+    if(year < 1000 || year > 3000 || month == 0 || month > 12){
+      alert('The year you entered is incorrect')
+      return false;
+    }
+    //adjust for leap years
+    if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)){
+      monthLength[1]=29;
+      return alert(monthLength) ;
+    }
+    if (mydate.getDay()=== 1){
+       alert('Your Akan name  is ' + ''+ maleNames[0])
+    }
+    else if (mydate.getDay()=== 2){
+      alert('Your Akan name  is ' + ''+ maleNames[1])
+    }
+    else if (mydate.getDay()=== 3){
+    alert('Your Akan name  is ' + ''+ maleNames[2])
+    }
+    else if (mydate.getDay()=== 4){
+    alert('Your Akan name  is ' + ''+ maleNames[3])
+    }
+    else if (mydate.getDay()=== 5){
+    alert('Your Akan name  is ' + ''+ maleNames[4])
+    }
+    else if (mydate.getDay()=== 6){
+    alert('Your Akan name  is ' + ''+ maleNames[5])
+    }
+    else if (mydate.getDay()=== 7){
+    alert('Your Akan name  is ' + ''+ maleNames[1])
+    }
+    //return  mydate.getDay()//alert (mydate.getDay());// alert(getDay(mydate)), alert(mydate); //
+}
 }
