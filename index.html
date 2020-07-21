@@ -4,32 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>birthday</title>
-  <!--<link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">-->
   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  
 </head>
 <style>
-  body {
+body {
 background-image: url('images/rain-forest.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;  
 background-size: cover;
 }
-
 </style>
+
 <body>
-  <header class="center">
+  <!--<header class="center">
     <h1>Happy birth day Rafiki! <br>
       Welcome to the African Rain forest<br>
       Tell me your birthdate and gender.<br>
       I wil tell you your true Akan name!</h1>
-  </header> 
+  </header> -->
 
-  <table cellspacing = "2" cellpadding = "2" border = "1">
-    <tr>
-      <td align = "right">Name</td>
-      <td><input type = "text" name = "Name" /></td>
-   </tr>
-  </table>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="centre">
+        <h1>Ghanaian Akan Names</h1> 
+        <br>  
+        <br>
+        <br>   
+           <h2> Akan names in Ghana are based on
+             <br> 
+            <ul>
+              <li>gender</li>
+              <li>day of the week one was born</li>
+          <br>
+          <h2>Select your gender and key in your date of birth and submit the information 
+            for your Akan name</h2>
+        </h2> 
+      </div>
+      <br>
+      <br>
+      <br>
+</form>
+      <table cellspacing = "10" cellpadding = "10" border = "10">
+        <tr>
+          <td align = "right">Birthday</td>
+          <td><input type = "text" name = "Birthday" /></td>
+        </tr>
+        <tr>
+          <td  align= "right"> Gender</td>
+          <td> 
+            <select name = 'Gender'>
+              <option value="Female">F</option>
+              <option value="Male">M</option> 
+          </td>
+          </tr>
+          <tr>
+            <td><button type="button" class="button" onclick="validateBirthday()">
+              Submit</button></td>
+          </tr>
+      </table>
+    </div>
+
+  </form>
+</div>
+
+    <script src="/js/script.js"></script>
+    <script>
+      getInputValue();
+  </script>
+</body>
+</html>
+
+      <!-- INTRO SECTION -->
   <!--
   <section class="row">
       <div class="grid">
@@ -59,7 +106,7 @@ background-size: cover;
         action="#" method="post">
     </div> 
   </section>
-=================================================================-->
+=================================================================
   
     <form form id="myForm" action="/login" method="post">
   <fieldset>
@@ -77,17 +124,4 @@ background-size: cover;
     <br>
   </fieldset>
   <button type="button" class="button" onclick="validateBirthday()"><h1>Submit</h1></button>
-  <!--input type="submit" name="submit" value="Send">-->
-</form>
-</section>
-</div>
-
-<body>
-
-</body>
-    <script src="/js/script.js"></script>
-    <script>
-      getInputValue();
-  </script>
-</body>
-</html>
+  input type="submit" name="submit" value="Send">-->
